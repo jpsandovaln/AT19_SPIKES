@@ -13,11 +13,11 @@
 
 from flask import Flask
 from flask_restful import Api
-from crud_users import ShowUsers
-from crud_users import CreateUser
-from crud_users import FindUser
-from crud_users import DeleteUser
-from crud_users import UpdateUser
+from db_controller.crud_users import ShowUsers
+from db_controller.crud_users import CreateUser
+from db_controller.crud_users import FindUser
+from db_controller.crud_users import DeleteUser
+from db_controller.crud_users import UpdateUser
 
 app = Flask(__name__)
 api = Api(app)
