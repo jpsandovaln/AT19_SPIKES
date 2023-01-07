@@ -24,6 +24,7 @@ URI = os.getenv('URI')
 db = DatabaseConnection(URI).db_connection()
 
 
+
 def get_form_information(request):
     """Gets the data from the form"""
     name = request.form['name']

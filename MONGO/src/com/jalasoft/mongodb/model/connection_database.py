@@ -25,5 +25,6 @@ class DatabaseConnection:
             client = MongoClient(self.uri)
             db = client["db_users_app"]
         except ConnectionError:
-            print('Error connection with data base')
+            raise ConnectionError('Error connection with data base')
         return db
+        
