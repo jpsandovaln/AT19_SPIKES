@@ -26,5 +26,5 @@ https://www.mongodb.com/try/download/community
 1.	Run Wampserver
 2.	Open a browser and go to 'http://localhost/phpmyadmin/'
 3.	Log in with user: 'root' and password input goes empty
-4.	Create a database named 'db_converter'
+4.	Create a database named 'converter_db'
 5.	Run the main.py file
