@@ -18,14 +18,19 @@ from db_controller.crud_users import CreateUser
 from db_controller.crud_users import FindUser
 from db_controller.crud_users import DeleteUser
 from db_controller.crud_users import UpdateUser
+from db_controller.crud_origin_file import CreateOriginFile
+from db_controller.crud_animal import CreateAnimal
 
 app = Flask(__name__)
 api = Api(app)
+
 api.add_resource(CreateUser, '/create_users')
 api.add_resource(ShowUsers, '/show_all_users')
 api.add_resource(FindUser, '/find_user/<string:user_name>')
 api.add_resource(DeleteUser, '/delete/<string:user_name>')
 api.add_resource(UpdateUser, '/update/<string:user_name>')
+api.add_resource(CreateOriginFile, '/create_origin_file')
+api.add_resource(CreateAnimal, '/create_animal')
 
 if __name__ == '__main__':
     app.run(debug=True, port=4000)
