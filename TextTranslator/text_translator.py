@@ -5,7 +5,6 @@ print(googletrans.__version__)
 print(googletrans.LANGUAGES)
 translator = Translator()
 text1 = 'おはようございます'
-text2 = 'Hello'
 language = 'es'
 translated = translator.translate(text1, dest=language)
 languages = googletrans.LANGUAGES
