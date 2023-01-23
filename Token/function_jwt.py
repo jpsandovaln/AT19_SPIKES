@@ -10,10 +10,13 @@
 # with Jalasoft.
 #
 
-from jwt import encode, decode
+from jwt import encode
+from jwt import decode 
 from jwt import exceptions
 from os import getenv
-from datetime import datetime, timedelta, timezone
+from datetime import datetime
+from datetime import timedelta
+from datetime import timezone
 from flask import jsonify
 
 
