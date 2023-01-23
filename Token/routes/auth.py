@@ -10,14 +10,17 @@
 # with Jalasoft.
 #
 
-from flask import Blueprint, jsonify, request
-from function_jwt import write_token, validate_token
+from flask import Blueprint
+from flask import jsonify
+from flask import request
+from function_jwt import write_token
+from function_jwt import validate_token
 
 
 routes_auth = Blueprint("routes_auth", __name__)
 
 
-@routes_auth.route("/login", methods=["POST"])
+@routes_auth.route("/login", methods = ["POST"])
 def login():
     """Simulates login and generates the token"""
 
