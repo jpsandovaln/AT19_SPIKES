@@ -19,7 +19,7 @@ print(googletrans.LANGUAGES)
 translator = Translator()
 text1 = 'おはようございます'
 language = 'es'
-translated = translator.translate(text1, dest=language)
+translated = translator.translate(text1, dest = language)
 languages = googletrans.LANGUAGES
 lang = str(languages[str(translated.src)])
 
